@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chá de Bebê da Melina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    ul {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      margin-bottom: 30px;
+    }
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 1.1em;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .images {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .images img {
+      width: 100px;
+      margin: 10px;
+    }
+    .location {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    .location iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #ffb6c1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #ff8da1;
+    }
+    .mensagem-confirmacao {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chá de Bebê da Melina 🎀</h1>
+  </header>
+  <main>
+    <p>Separamos algumas sugestões de presentes com muito carinho:</p>
+
+    <ul>
+      <li>Fraldas tamanho P</li>
+      <li>Fraldas tamanho M</li>
+      <li>Fraldas tamanho G</li>
+      <li>Itens de higiene (sabonete, shampoo, pomada, etc.)</li>
+      <li>Roupinhas (RN até 1 ano)</li>
+    </ul>
+
+    <div class="images">
+      <img src="https://e7.pngegg.com/pngimages/135/465/png-clipart-pink-baby-bottle-pink-baby.png" alt="mamadeira">
+      <img src="https://w7.pngwing.com/pngs/796/426/png-transparent-multicolored-baby-illustration-wedding-invitation-baby-shower-infant-pattern-material-wood-grain-building-blocks-material-child-building-geometric-pattern.png" alt="baby">
+      <img src="https://i.pinimg.com/originals/fa/72/a3/fa72a3e3ef26f817fa71f1b26719bc52.png" alt="ursinha">
+    </div>
+
+    <div class="location">
+      <h2>Local da Festa</h2>
+      <p>A festa será realizada no endereço abaixo. Clique no mapa para abrir no Google Maps.</p>
+      <a href="https://maps.app.goo.gl/3vv88bZw6nX2UmN79" target="_blank">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9618825294386!2d-46.636305923671725!3d-23.568007261833997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9a2a6abfb%3A0xf6f66186a91e182e!2sLink!5e0!3m2!1spt-BR!2sbr!4v1716144532739!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </a>
+    </div>
+
+    <form action="https://formsubmit.co/jhonataalves.a1998@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Confirmação de Presença para o Chá da Melina!">
+      <input type="hidden" name="_template" value="table">
+      <h2>Confirme sua presença</h2>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone">
+
+      <button type="submit">Confirmar</button>
+    </form>
+
+    <div class="mensagem-confirmacao" id="mensagem-confirmacao">
+      Obrigado por confirmar sua presença! 💖
+    </div>
+  </main>
+
+</body>
+</html>
